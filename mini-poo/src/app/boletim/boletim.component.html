@@ -1,0 +1,18 @@
+<div class="boletim-container">
+  <h2>Boletim</h2>
+  <div>
+    <label for="bim1">Nota do 1º Bimestre:</label>
+    <input id="bim1" type="number" />
+  </div>
+  <div>
+    <label for="bim2">Nota do 2º Bimestre:</label>
+    <input id="bim2" type="number" />
+  </div>
+  <div>
+    <button (click)="calcularMedias()">Calcular Médias</button>
+  </div>
+  <div *ngIf="mediaParcial !== undefined">
+    <p>Média Parcial: {{ mediaParcial }}</p>
+    <p>Média Final: {{ mediaFinal }}</p>
+  </div>
+</div>
